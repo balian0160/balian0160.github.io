@@ -264,40 +264,47 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#m49">M49</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">M49</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="home" class="header-image">
-    <div class="jumbotron text-center">
-      <h1>OV Audio</h1> 
-            <div class="headerTextPad"></div>
-            <div class="row text-left ">
-                <div class="col-sm-5 col-md-offset-6">
-                        <p>Pk audio is company designing high end studio microhones with focus on great technical parameters with preserving sound flavour of original vintage microphones. All microphones are handmade with great precission measured and tested on professional laboratory equipment.
-                        </p>
-                </div>
-            </div>
-    </div>
-</div>
 
 <!-- Container (Portfolio Section) -->
 <div class="container">
 <div id="m49" class="m49-block text-center">
-  <div class="row text-center slideanim">
+  <div class="row text-center">
       <div class="col-lg-6">
         <img src="images/M49.jpg" alt="" width="500">
       </div>
         <div class="col-lg-6">
             
-          <h1>M49</h1><br><p>Large membrane Condenser tube microphone based on legendary type U47. Electrical circuit is redesigned and allows use of different tubes which can give microhone different result. Mostly is PK47 used for vocals as in past was used in a most of best sounding records in the world. Microhone is favourite for known proximity efekt which makes vocals big but still smoothly rounded as it fits for the vast majority of female and male voices. We uses M7 capsules which were used en early models of U47. More info about microphone PK47 here.(Odkaz na další stránk kde se otevřou podrobnosti o mikrfofonu, další fotky atd,..)  </p>
-    
-          <a href="m49.html">More info</a>
+          <h1>M49 Podrobne info</h1><br><p>Large membrane Condenser tube microphone based on legendary type U47. Electrical circuit is redesigned and allows use of different tubes which can give microhone different result. Mostly is PK47 used for vocals as in past was used in a most of best sounding records in the world. Microhone is favourite for known proximity efekt which makes vocals big but still smoothly rounded as it fits for the vast majority of female and male voices. We uses M7 capsules which were used en early models of U47. More info about microphone PK47 here.(Odkaz na další stránk kde se otevřou podrobnosti o mikrfofonu, další fotky atd,..)  </p>
             
+            
+            <p>Sample1</p>
+            <audio controls>
+                <source src="Music/EmptyDays.mp3" type="audio/mpeg">
+            Not supported.
+                <track kind="description" label="test" srclang="en">
+            </audio><br>
+            
+            <p>Sample1</p>
+            <audio controls>
+                <source src="Music/EmptyDays.mp3" type="audio/mpeg">
+            Not supported.
+            </audio><br>
+            
+            <p>Sample1</p>
+            <audio controls>
+                <source src="Music/EmptyDays.mp3" type="audio/mpeg">
+            Not supported.
+            </audio><br> 
+            
+            <a href="datasheets/sample.pdf">m49 datasheet.pdf</a><br>
         </div>
     </div><br>
 </div>
@@ -313,40 +320,6 @@
 -->
 </footer>
 
-<script>
-$(document).ready(function(){
-    
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-      
-  });
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
 
 </body>
 </html>
